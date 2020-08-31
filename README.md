@@ -4,6 +4,12 @@
 # impatient-showdown
 > Preview markdown buffer live over HTTP.
 
+Use [impatient-mode](https://github.com/skeeto/impatient-mode) with
+[showdown](https://github.com/showdownjs/showdown) to preivew markdown over HTTP
+for real time editing markdown file.
+
+showdown is a great tootl that converts Markdown to HTML
+
 ## Contribution
 
 If you would like to contribute to this project, you may either clone and make pull
