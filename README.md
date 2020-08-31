@@ -8,7 +8,18 @@ Use [impatient-mode](https://github.com/skeeto/impatient-mode) with
 [showdown](https://github.com/showdownjs/showdown) to preivew Markdown over HTTP
 for real time editing Markdown file.
 
-showdown is a great tootl that converts Markdown to HTML
+[showdown](https://github.com/showdownjs/showdown)
+is a great tootl that converts Markdown to HTML with different kind of
+flavor; including GitHub style markdown.
+
+## Usage
+
+Use this package by calling the command below. Then it should opens your markdown
+file in browser.
+
+```
+M-x impatient-showdown-mode
+```
 
 ## Contribution
 
