@@ -1,10 +1,10 @@
-;;; impatient-showdown.el --- Preview markdown buffer live over HTTP  -*- lexical-binding: t; -*-
+;;; impatient-showdown.el --- Preview markdown buffer live over HTTP using showdown  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020  Shen, Jen-Chieh
 ;; Created date 2020-08-31 16:08:08
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Preview markdown buffer live over HTTP.
+;; Description: Preview markdown buffer live over HTTP using showdown.
 ;; Keyword: live preview markdown http server impatient
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (impatient-mode "1.1"))
@@ -27,7 +27,7 @@
 
 ;;; Commentary:
 ;;
-;; Preview markdown buffer live over HTTP.
+;; Preview markdown buffer live over HTTP using showdown.
 ;;
 
 ;;; Code:
@@ -35,7 +35,7 @@
 (require 'impatient-mode)
 
 (defgroup impatient-showdown nil
-  "Preview markdown buffer live over HTTP."
+  "Preview markdown buffer live over HTTP using showdown."
   :prefix "impatient-showdown-"
   :group 'tool
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/impatient-showdown"))

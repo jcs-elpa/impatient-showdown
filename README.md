@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # impatient-showdown
-> Preview markdown buffer live over HTTP.
+> Preview markdown buffer live over HTTP using showdown.
 
 Use [impatient-mode](https://github.com/skeeto/impatient-mode) with
 [showdown](https://github.com/showdownjs/showdown) to preivew Markdown over HTTP
