@@ -4,6 +4,10 @@
 # impatient-showdown
 > Preview markdown buffer live over HTTP using showdown.
 
+<p align="center">
+  <img src="./etc/screenshot.png" width="733" height="364"/>
+</p>
+
 Use [impatient-mode](https://github.com/skeeto/impatient-mode) with
 [showdown](https://github.com/showdownjs/showdown) to preivew Markdown over HTTP
 for real time editing Markdown file.
