@@ -5,8 +5,8 @@
 > Preview markdown buffer live over HTTP.
 
 Use [impatient-mode](https://github.com/skeeto/impatient-mode) with
-[showdown](https://github.com/showdownjs/showdown) to preivew markdown over HTTP
-for real time editing markdown file.
+[showdown](https://github.com/showdownjs/showdown) to preivew Markdown over HTTP
+for real time editing Markdown file.
 
 showdown is a great tootl that converts Markdown to HTML
 
