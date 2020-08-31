@@ -36,7 +36,7 @@
 
 <script>
   function display() {
-    showdown.setFlavor('github');
+    showdown.setFlavor('%s');
     let converter = new showdown.Converter({ extensions: ['codehighlight'] });
     converter.setOption('simpleLineBreaks', false);
 
