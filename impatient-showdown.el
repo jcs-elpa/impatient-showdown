@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Preview markdown buffer live over HTTP.
 ;; Keyword: live preview markdown http server impatient
-;; Version: 0.0.1
+;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (impatient-mode "1.1"))
 ;; URL: https://github.com/jcs-elpa/impatient-showdown
 
