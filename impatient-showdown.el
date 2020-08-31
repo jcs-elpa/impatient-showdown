@@ -61,6 +61,13 @@
   :type 'list
   :group 'impatient-showdown)
 
+(defcustom impatient-showdown-flavor 'original
+  "Display markdown depends on your flavor."
+  :type '(choice (const :tag "original" original)
+                 (const :tag "vanilla" vanilla)
+                 (const :tag "github" github))
+  :group 'impatient-showdown)
+
 ;;; Util
 
 (defun impatient-showdown--get-string-from-file (path)
@@ -94,13 +101,15 @@
 ;;; Core
 
 (defun impatient-showdown--buffer-filter (buf)
-  "Impatient buffer filter for Markdown file."
+  "Impatient BUF filter for Markdown file."
   (princ
    (with-temp-buffer
      (set-buffer buf)
      (let ((preview-str (impatient-showdown--get-string-from-file impatient-showdown--preview-template)))
-       (format preview-str (buffer-string)
+       (format preview-str
+               (buffer-string)
                (impatient-showdown--form-script-tags impatient-showdown-scripts)
+               (symbol-name impatient-showdown-flavor)
                (impatient-showdown--form-link-tags impatient-showdown-links))))
    (current-buffer)))
 
