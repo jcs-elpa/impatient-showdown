@@ -68,6 +68,21 @@
                  (const :tag "github" github))
   :group 'impatient-showdown)
 
+(defcustom impatient-showdown-background-color "#141414"
+  "For display body background color."
+  :type 'string
+  :group 'impatient-showdown)
+
+(defcustom impatient-showdown-markdown-background-color "#888888"
+  "For display markdown background color."
+  :type 'string
+  :group 'impatient-showdown)
+
+(defcustom impatient-showdown-markdown-border-color "#AAAAAA"
+  "For display markdown border color."
+  :type 'string
+  :group 'impatient-showdown)
+
 ;;; Util
 
 (defun impatient-showdown--get-string-from-file (path)
@@ -110,7 +125,10 @@
                (buffer-string)
                (impatient-showdown--form-script-tags impatient-showdown-scripts)
                (symbol-name impatient-showdown-flavor)
-               (impatient-showdown--form-link-tags impatient-showdown-links))))
+               (impatient-showdown--form-link-tags impatient-showdown-links)
+               impatient-showdown-background-color
+               impatient-showdown-markdown-background-color
+               impatient-showdown-markdown-border-color)))
    (current-buffer)))
 
 (defun impatient-showdown--start ()
