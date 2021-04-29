@@ -11,11 +11,11 @@
 </p>
 
 Use [impatient-mode](https://github.com/skeeto/impatient-mode) with
-[showdown](https://github.com/showdownjs/showdown) to preivew Markdown over HTTP
+[showdown](https://github.com/showdownjs/showdown) to preview Markdown over HTTP
 for real time editing Markdown file.
 
 [showdown](https://github.com/showdownjs/showdown)
-is a great tootl that converts Markdown to HTML with different kind of
+is a great tool that converts Markdown to HTML with different kind of
 flavor; including GitHub style markdown.
 
 ## Usage
