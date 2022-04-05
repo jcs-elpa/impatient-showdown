@@ -3,7 +3,7 @@
 (package "impatient-showdown" "0.1.2" "Preview markdown buffer live over HTTP using showdown")
 
 (package-file "impatient-showdown.el")
-(files "[^.].el$" "preview.html")
+(files "*.el" "preview.html")
 
 (depends-on "emacs" "24.3")
 (depends-on "impatient-mode")
