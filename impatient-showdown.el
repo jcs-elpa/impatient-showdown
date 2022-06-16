@@ -4,11 +4,10 @@
 ;; Created date 2020-08-31 16:08:08
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Preview markdown buffer live over HTTP using showdown.
-;; Keyword: live preview markdown http server impatient
+;; URL: https://github.com/jcs-elpa/impatient-showdown
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "24.3") (impatient-mode "1.1"))
-;; URL: https://github.com/jcs-elpa/impatient-showdown
+;; Keywords: live preview markdown http server impatient
 
 ;; This file is NOT part of GNU Emacs.
 
