@@ -3,7 +3,7 @@
          "Preview markdown buffer live over HTTP using showdown")
 
 (website-url "https://github.com/jcs-elpa/impatient-showdown")
-(keywords "live" "preview" "markdown" "http" "server" "impatient")
+(keywords "convenience" "live" "preview" "markdown" "http" "server" "impatient")
 
 (package-file "impatient-showdown.el")
 (files "*.el" "preview.html")
