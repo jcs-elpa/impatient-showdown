@@ -7,7 +7,7 @@
 ;; URL: https://github.com/jcs-elpa/impatient-showdown
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "24.3") (impatient-mode "1.1"))
-;; Keywords: live preview markdown http server impatient
+;; Keywords: convenience live preview markdown http server impatient
 
 ;; This file is NOT part of GNU Emacs.
 
