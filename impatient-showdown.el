@@ -42,9 +42,15 @@
 (defconst impatient-showdown--home-dir (file-name-directory load-file-name)
   "`impatient-showdown' home directory.")
 
-(defconst impatient-showdown--preview-template
+(defconst impatient-showdown--default-preview-template
   (expand-file-name "preview.html" impatient-showdown--home-dir)
-  "`impatient-showdown' html preview template.")
+  "Default preview HTML template.")
+
+(defcustom impatient-showdown-preview-template
+  impatient-showdown--default-preview-template
+  "Preview HTML template."
+  :type 'string
+  :group 'impatient-showdown)
 
 (defcustom impatient-showdown-scripts
   '("https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"
@@ -84,11 +90,9 @@
 
 ;;; Util
 
-(defun impatient-showdown--get-string-from-file (path)
+(defun impatient-showdown--string-from-file (path)
   "Return PATH file content."
-  (with-temp-buffer
-    (insert-file-contents path)
-    (buffer-string)))
+  (with-temp-buffer (insert-file-contents path) (buffer-string)))
 
 (defun impatient-showdown--form-script-tag (url)
   "Form a script tag by URL."
@@ -119,15 +123,17 @@
   (princ
    (with-temp-buffer
      (set-buffer buf)
-     (let ((preview-str (impatient-showdown--get-string-from-file impatient-showdown--preview-template)))
-       (format preview-str
-               (buffer-string)
-               (impatient-showdown--form-script-tags impatient-showdown-scripts)
-               (symbol-name impatient-showdown-flavor)
-               (impatient-showdown--form-link-tags impatient-showdown-links)
-               impatient-showdown-background-color
-               impatient-showdown-markdown-background-color
-               impatient-showdown-markdown-border-color)))
+     (let ((preview-str (impatient-showdown--string-from-file impatient-showdown-preview-template)))
+       (if (string= impatient-showdown--default-preview-template impatient-showdown-preview-template)
+           (format preview-str
+                   (buffer-string)
+                   (impatient-showdown--form-script-tags impatient-showdown-scripts)
+                   (symbol-name impatient-showdown-flavor)
+                   (impatient-showdown--form-link-tags impatient-showdown-links)
+                   impatient-showdown-background-color
+                   impatient-showdown-markdown-background-color
+                   impatient-showdown-markdown-border-color)
+         preview-str)))
    (current-buffer)))
 
 (defun impatient-showdown--start ()

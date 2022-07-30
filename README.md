@@ -19,7 +19,7 @@ for real time editing Markdown file.
 is a great tool that converts Markdown to HTML with different kind of
 flavor; including GitHub style markdown.
 
-## Usage
+## 🔧 Usage
 
 Use this package by calling the command below. Then it should opens your markdown
 file in browser.
@@ -27,6 +27,21 @@ file in browser.
 ```
 M-x impatient-showdown-mode
 ```
+
+## 🔧 Customization
+
+#### 🧪 Variables
+
+- `impatient-showdown-preview-template` - main preview HTML template file (not encouraged)
+
+Following variables only work when preview template is using the default template!
+
+- `impatient-showdown-scripts` - List of JavaScript to load.
+- `impatient-showdown-links` - List of CSS to load.
+- `impatient-showdown-flavor` - markdown flavor (default to` 'original`)
+- `impatient-showdown-background-color` - `<body>` background color (default to `"#141414"`)
+- `impatient-showdown-markdown-background-color` - markdown background color (default to `"#888888"`)
+- `impatient-showdown-markdown-border-color` - markdown border color (default to `"#AAAAAA"`)
 
 ## Contribute
 
