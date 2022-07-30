@@ -34,7 +34,7 @@ M-x impatient-showdown-mode
 
 - `impatient-showdown-preview-template` - main preview HTML template file (not encouraged)
 
-Following variables only work when preview template is using the default template!
+> ⚠️ Following variables only work when preview template is using the default template!
 
 - `impatient-showdown-scripts` - List of JavaScript to load.
 - `impatient-showdown-links` - List of CSS to load.
