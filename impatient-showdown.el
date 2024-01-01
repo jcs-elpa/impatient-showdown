@@ -1,6 +1,6 @@
 ;;; impatient-showdown.el --- Preview markdown buffer live over HTTP using showdown  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2020  Shen, Jen-Chieh
+;; Copyright (C) 2020-2024  Shen, Jen-Chieh
 ;; Created date 2020-08-31 16:08:08
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
