@@ -39,6 +39,8 @@
     showdown.setFlavor('%s');
     let converter = new showdown.Converter({ extensions: ['codehighlight'] });
     converter.setOption('simpleLineBreaks', false);
+    converter.setOption('tables', true);
+
 
     let md = document.querySelector('#markdown-body div');
     if (!md) return;
