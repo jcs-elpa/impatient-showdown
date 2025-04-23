@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "impatient-showdown"
          "0.1.2"
          "Preview markdown buffer live over HTTP using showdown")
